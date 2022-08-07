@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidNight</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/img/VidNight.png" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="homepage">
+        <div class="modal">
+            <div class="moder__overlay-homepage">
+                <!-- Header -->
+                <header class="header">
+                    <div class="grid">
+                        <nav class="header__navbar">
+                            <div class="header__navbar-left">
+                                <div class="header__navbar-item">
+                                    <i class="fas fa-list header__navbar-icon header__navbar-icon--sidebar"></i>
+                                    <i class="fas fa-play header__navbar-icon header__navbar-icon--video"></i>
+                                    <span class="header__navbar-text--topic">VidNight</span>
+                                </div>
+                            </div>
+                            <div class="header__navbar-mid">
+                                <div class="header-with-search">
+                                    <input type="text" class="header__search-input" placeholder="Search" onkeyup="search()">
+                                    <div class="header__search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__navbar-right">
+                                <div class="header__navbar-item">
+                                    <div class="header__navbar-item--add">
+                                        <i class="fas fa-video header__navbar-icon"></i>
+                                        <span class="header__navbar-text">ADD VIDEO</span>
+                                    </div>
+                                    <div class="header__navbar-user">
+                                        <i class="fas fa-bell header__navbar-icon header__navbar-icon--bell"></i>
+                                        <img src="./assets/img/nam.jpg" alt="" class="header__navbar-img">
+                                        <span class="header__navbar-text">Đỗ Nam</span>
+                                        <a href="homepagesign.html">
+                                            <i class="fas fa-angle-down header__navbar-icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+
+                <!-- Container -->
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__column-2">
+                                <nav class="category">
+                                    <h3 class="category__heading--sidebar">MENU</h3>
+            
+                                    <ul class="category-list">
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-home"></i>
+                                            </div>
+                                            <a href="homepage.html" class="category-item__link">Home</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-compass"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Browse</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-fire"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Trending</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-window-maximize"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Following</a>
+                                        </li>
+                                    </ul>
+        
+                                    <h3 class="category__heading">LIBRARY</h3>
+            
+                                    <ul class="category-list">
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-window-maximize"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Recent</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Favourites</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-window-maximize"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Saved</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <i class="fas fa-video"></i>
+                                            </div>
+                                            <a href="" class="category-item__link">Your Videos</a>
+                                        </li>
+                                    </ul>
+        
+                                    <h3 class="category__heading">FOLLOWING</h3>
+            
+                                    <ul class="category-list">
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <img src="./assets/img/dh.jpg" alt="" class="categoty-img">
+                                            </div>
+                                            <a href="" class="category-item__link">Dương Hiếu</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <img src="./assets/img/huân.jpg" alt="" class="categoty-img">
+                                            </div>
+                                            <a href="" class="category-item__link">Quốc Huân</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <img src="./assets/img/thái.jpg" alt="" class="categoty-img">
+                                            </div>
+                                            <a href="" class="category-item__link">Nguyễn Thái</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <div class="category-icon">
+                                                <img src="./assets/img/thuý.jpg" alt="" class="categoty-img">
+                                            </div>
+                                            <a href="" class="category-item__link">Thanh Thuý</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="grid__column-10">
+                                <div class="home-browse">
+                                        <div class="right-sidebar">
+                                            <div class="grid__row-2">
+                                                <a href="music.html">
+                                                    <div class="right-sidebar__list">
+                                                        <img src="https://i.ytimg.com/vi/22XC-3Q-rRA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCGIxF8VNb8E5kc0wtJVEkhGyKpiA" alt="" class="home-browse-item__img">
+                                                        <div class="right-sidebar__list-info-item">
+                                                            <h4 class="home-browse-item__name">LOU HOÀNG - BẮT CÓC CON TIM (Official MV) ft. OnlyC Pro.</h4>
+                                                            <div class="home-browse-item__view-day">
+                                                                <span class="home-browse-item__view">9.9Tr views</span>
+                                                                <div class="home-browse-item__icon">
+                                                                    <i class="fas fa-circle"></i>
+                                                                </div>
+                                                                <span class="home-browse-item__day">30 thg 6, 2022</span>
+                                                            </div>
+                                                            <div class="home-browse-item__channel-owner">
+                                                                <img src="https://yt3.ggpht.com/p-ox-RxPBvWz64RVuWk7AIHQA09cJRXnMII5lLWi6tVdiFCklPETRUj-eXEzRIg-UH0l89t0=s88-c-k-c0x00ffffff-no-nd-rj" alt="" class="home-browse-item__channel-img">
+                                                                <span class="home-browse-item__channel-name">Lou Hoàng OFFICIAL</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="right-sidebar__list">
+                                                    <img src="https://i.ytimg.com/vi/xypzmu5mMPY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCSFDzpWUFjgUCkewtcu4kUYlYB7Q" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">SƠN TÙNG M-TP | MUỘN RỒI MÀ SAO CÒN | OFFICIAL MUSIC VIDEO</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">2.5Tr views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">29 thg 4, 2021</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/a1EfjlBYCJaiK6xb60QnvwivnW6X8n82-pmJE8-YeQ87IHN_3NSNXhLUHIKAnMPY98wlJnF8Tw=s88-c-k-c0x00ffffff-no-nd-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">Sơn Tùng M-TP Official</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="right-sidebar__list-2">
+                                                    <img src="https://i.ytimg.com/vi/p693u53Q10U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcq6jHawmF9Mc0Sd1EiezrGKRsjg" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">Lionel Messi - King Of Football</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">9.4Tr views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">7 thg 10, 2019</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/AJTynF2WGCj87Q3jZycthKuNTFecbxZBPCW5gcUTFeqPABomrRV3Uj9gvELfOQfjOR1ciAkIXck=s88-c-k-c0x00ffffff-no-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">Football AG</span>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="right-sidebar__list">
+                                                    <img src="https://i.ytimg.com/vi/QFGavQYP3ok/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwpRGCimzD_fEvzBx020biggZ6IQ" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">Cristiano Ronaldo ● Overall 2022 | HD</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">252K views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">23 thg 5, 2022</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/XKFsAGRoNrEKh2c84eX4xamgunD8myzoMI8yPMQ_CcvvGtsrx-emM9y1K5RL2UGw07X5ATa2vVQ=s88-c-k-c0x00ffffff-no-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">kGZ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="right-sidebar__list-2">
+                                                    <img src="https://i.ytimg.com/vi/5Z375ofF7lk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhfqx5MHj5eGpbXPOykC9-qTC0pw" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">NGÔI ĐỀN HUYỀN THOẠI | FAKER - QUỶ VƯƠNG BẤT TỬ</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">2.2Tr views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">13 thg 11, 2019</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/ytc/AMLnZu_QYUkXxrVKBs1kqa0AQmGqjwIRfeZU-pybSbkX=s88-c-k-c0x00ffffff-no-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">Cảm Thể Thao</span>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="right-sidebar__list">
+                                                    <img src="https://i.ytimg.com/vi/ghZyPX-wWC0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDyhetJfKVbTrjPmFit_Ggku6RiUA" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">Nhạc Chill Tiktok - Tổng Hợp Những Bài Hát Tiktok "Nghe Là Nghiện" - Nhạc Lofi Chill Buồn 2022</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">15.9K views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">3 thg 8, 2022</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/gqG_aR9B8SlJw4cW9PVq0N7toikRLfV4rBYwKShDqZ49sScY9R4FZK6_2mfsO_uBsJ4ayNN5Aw=s88-c-k-c0x00ffffff-no-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">Bụi Chill</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-sidebar__list">
+                                                    <img src="https://i.ytimg.com/vi/15ma5rr122g/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD_VRqBKd5n6mPNM36PDu5iGlkORw" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">FIFA 23 | Official Career Mode Deep Dive Trailer</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">1.9Tr views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">1 thg 8, 2022</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/8w7iP2V5IOvIssQ4VI9ljbzvCfyUJVDjE16qvAzxeqdKhs8HqW7AyZrhZVXUBJhC-fjQ_nD-DVg=s88-c-k-c0x00ffffff-no-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">EA SPORTS FIFA</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="right-sidebar__list">
+                                                    <img src="https://i.ytimg.com/vi/xXBYbFbnkaE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCF4iWDSn7OmqAjwKUpxwJSUZB5Wg" alt="" class="home-browse-item__img">
+                                                    <div class="right-sidebar__list-info-item">
+                                                        <h4 class="home-browse-item__name">THE LOCKER ROOM | ARGENTINA - XỨNG ĐÁNG ỨNG CỬ VIÊN VÔ ĐỊCH WORLD CUP</h4>
+                                                        <div class="home-browse-item__view-day">
+                                                            <span class="home-browse-item__view">237K views</span>
+                                                            <div class="home-browse-item__icon">
+                                                                <i class="fas fa-circle"></i>
+                                                            </div>
+                                                            <span class="home-browse-item__day">2 thg 6, 2022</span>
+                                                        </div>
+                                                        <div class="home-browse-item__channel-owner">
+                                                            <img src="https://yt3.ggpht.com/1xn7I1sOERsJgEbFHjJ8ZFhGKiFKgphTktrVxeJQkNxGntlnyzpynD8X_PutDf5tBfuJpI8oyg=s88-c-k-c0x00ffffff-no-rj" alt="" class="home-browse-item__channel-img">
+                                                            <span class="home-browse-item__channel-name">BLV Anh Quân</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./search.js"></script>
+</body>
+</html>
